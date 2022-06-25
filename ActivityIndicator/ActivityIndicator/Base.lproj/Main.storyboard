@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="ActivityIndicator" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="3BB-bH-813">
+                                <rect key="frame" x="187" y="433" width="40" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="KRH-E7-CdG"/>
+                                    <constraint firstAttribute="width" constant="40" id="kis-T1-oiy"/>
+                                </constraints>
+                                <color key="color" red="0.92156862750000001" green="0.20784313730000001" blue="0.19215686269999999" alpha="1" colorSpace="calibratedRGB"/>
+                            </activityIndicatorView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mgm-cq-TCj">
+                                <rect key="frame" x="50" y="523" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="GIc-3D-llH"/>
+                                    <constraint firstAttribute="width" constant="80" id="rBS-YC-x18"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Start"/>
+                                <connections>
+                                    <action selector="startActivityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0cH-28-F8C"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CRn-LD-wnw">
+                                <rect key="frame" x="284" y="523" width="80" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="RRx-vD-AJn"/>
+                                    <constraint firstAttribute="width" constant="80" id="p1G-Ot-z2e"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Stop"/>
+                                <connections>
+                                    <action selector="stopActivityAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="or4-8X-Jzp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="CRn-LD-wnw" firstAttribute="top" secondItem="3BB-bH-813" secondAttribute="bottom" constant="50" id="7uc-Hp-SsI"/>
+                            <constraint firstItem="mgm-cq-TCj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="8hr-de-Y6a"/>
+                            <constraint firstItem="3BB-bH-813" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="LOd-Y2-YCs"/>
+                            <constraint firstItem="3BB-bH-813" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="Zg7-ej-Uc3"/>
+                            <constraint firstItem="mgm-cq-TCj" firstAttribute="top" secondItem="3BB-bH-813" secondAttribute="bottom" constant="50" id="gHz-Za-ryC"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="CRn-LD-wnw" secondAttribute="trailing" constant="50" id="j0x-Dj-ByX"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="myActivity" destination="3BB-bH-813" id="zCf-Yh-dLQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="20" y="73"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

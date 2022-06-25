@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CustomTableView" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="vQT-zm-JhL">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="countryCell" rowHeight="120" id="4Rs-VV-GSp" customClass="CountryTableViewCell" customModule="CustomTableView" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="4Rs-VV-GSp" id="t3Z-4d-Vn5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yaV-Re-bJV">
+                                                    <rect key="frame" x="0.0" y="10" width="414" height="100"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Viet Nam" translatesAutoresizingMaskIntoConstraints="NO" id="44Y-T2-8W1">
+                                                            <rect key="frame" x="10" y="10" width="80" height="80"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="44Y-T2-8W1" secondAttribute="height" id="8iK-wy-86E"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Việt Nam" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A41-rT-Dpa">
+                                                            <rect key="frame" x="100" y="42.5" width="304" height="15"/>
+                                                            <fontDescription key="fontDescription" name="HiraMinProN-W3" family="Hiragino Mincho ProN" pointSize="15"/>
+                                                            <color key="textColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstItem="A41-rT-Dpa" firstAttribute="leading" secondItem="44Y-T2-8W1" secondAttribute="trailing" constant="10" id="GV7-Pg-rzd"/>
+                                                        <constraint firstItem="44Y-T2-8W1" firstAttribute="top" secondItem="yaV-Re-bJV" secondAttribute="top" constant="10" id="cmZ-M1-YEx"/>
+                                                        <constraint firstAttribute="bottom" secondItem="44Y-T2-8W1" secondAttribute="bottom" constant="10" id="dae-Fc-Px4"/>
+                                                        <constraint firstItem="A41-rT-Dpa" firstAttribute="centerY" secondItem="44Y-T2-8W1" secondAttribute="centerY" id="orI-4H-GYQ"/>
+                                                        <constraint firstAttribute="trailing" secondItem="A41-rT-Dpa" secondAttribute="trailing" constant="10" id="pPS-17-WFv"/>
+                                                        <constraint firstItem="44Y-T2-8W1" firstAttribute="leading" secondItem="yaV-Re-bJV" secondAttribute="leading" constant="10" id="tdR-SW-ANW"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="yaV-Re-bJV" secondAttribute="trailing" id="NyY-qo-MXp"/>
+                                                <constraint firstItem="yaV-Re-bJV" firstAttribute="leading" secondItem="t3Z-4d-Vn5" secondAttribute="leading" id="lpr-rB-ntJ"/>
+                                                <constraint firstAttribute="bottom" secondItem="yaV-Re-bJV" secondAttribute="bottom" constant="10" id="nz1-g7-UY9"/>
+                                                <constraint firstItem="yaV-Re-bJV" firstAttribute="top" secondItem="t3Z-4d-Vn5" secondAttribute="top" constant="10" id="yVf-dT-8MI"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="countryImage" destination="44Y-T2-8W1" id="J40-u7-fV6"/>
+                                            <outlet property="countryLable" destination="A41-rT-Dpa" id="ype-Nj-cAg"/>
+                                            <outlet property="countryView" destination="yaV-Re-bJV" id="bjK-Ky-7jc"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="vQT-zm-JhL" secondAttribute="trailing" id="5uM-fc-Yq7"/>
+                            <constraint firstItem="vQT-zm-JhL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="GFC-w2-496"/>
+                            <constraint firstItem="vQT-zm-JhL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ZvR-Wh-WtP"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="vQT-zm-JhL" secondAttribute="bottom" id="xmk-pw-woQ"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="countryTableView" destination="vQT-zm-JhL" id="DRE-gQ-Ovk"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="18.840579710144929" y="72.991071428571431"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Viet Nam" width="348" height="261"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
